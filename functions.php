@@ -20,6 +20,7 @@ require_once STB_DIR . '/inc/seo.php';
 require_once STB_DIR . '/inc/custom-post-types.php';
 require_once STB_DIR . '/inc/image-optimization.php';
 require_once STB_DIR . '/inc/theme-options.php';
+require_once STB_DIR . '/inc/legal-pages.php';
 
 /**
  * Get estimated reading time for a post.

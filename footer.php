@@ -44,11 +44,23 @@ defined( 'ABSPATH' ) || exit;
             </nav>
         <?php endif; ?>
 
+        <?php if ( has_nav_menu( 'footer-legal' ) ) : ?>
+            <nav class="footer-legal-navigation" aria-label="<?php esc_attr_e( 'Legal Pages', 'smarttoolsblog' ); ?>">
+                <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'footer-legal',
+                    'menu_id'        => 'footer-legal-menu',
+                    'container'      => false,
+                    'depth'          => 1,
+                ) );
+                ?>
+            </nav>
+        <?php endif; ?>
+
         <div class="footer-bottom">
             <p class="copyright">
                 &copy; <?php echo esc_html( date( 'Y' ) ); ?>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>.
-                <?php esc_html_e( 'All rights reserved.', 'smarttoolsblog' ); ?>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Factaxy</a> - All Rights Reserved.
             </p>
         </div>
     </div>
